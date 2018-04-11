@@ -33,7 +33,7 @@
     	  <arg value="-1"/>
       	  </java>
 	</target>
-	</target>"
+	</target>
 
     <target name="clean-build" depends="clean,jar"/>
 
