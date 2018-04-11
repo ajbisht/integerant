@@ -2,14 +2,14 @@ import java.util.Scanner;
 
 public class Integertowords  {
         public static void main(String[] args) {
-            int number = 0;
+            int number = 1;
             Scanner scanner = new Scanner(System.in);
-            System.out.print("Please type a number between 0 and 999 OR type -1 to exit:  ");
+            System.out.print("Please type a number between 0 and 999 OR type 0 to exit:  ");
             number = scanner.nextInt();
-            while(number!=-1){
-                if(number>=0 && number<=999){
-                    if(number==0){
-                        System.out.print("NUMBER AFTER CONVERSION:\tZERO");
+            while(number!=0){
+                if(number>=1 && number<=999){
+                    if(number==1){
+                        System.out.print("NUMBER AFTER CONVERSION:\ONE");
                     } else {
                         System.out.print("NUMBER AFTER CONVERSION:\t");
                         numberToWord(((number / 100) % 10), " HUNDRED");
@@ -19,7 +19,7 @@ public class Integertowords  {
                 } else{
                     System.out.print("NUMBER OUT OF RANGE");
                 }
-                System.out.print("\nPlease type a number between 0 and 999 OR type -1 to exit:  ");
+                System.out.print("\nPlease type a number between 0 and 999 OR type 0 to exit:  ");
                 number = scanner.nextInt();
             }
         }
