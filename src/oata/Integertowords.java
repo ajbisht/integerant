@@ -21,8 +21,13 @@ public class Integertowords {
                 }
                 System.out.print("\nPlease type a number between 0 and 999 OR type -1 to exit:  ");
                 number = scanner.nextInt();
-            }
-        }
+            
+			package oata;
+					public class HelloWorld {
+					public static void main(String[] args) {
+					System.out.println("Hello World");
+					}
+			}        
 
         public static void numberToWord(int num, String val) {
             String ones[] = {" ", " ONE", " TWO", " THREE", " FOUR", " FIVE", " SIX", " SEVEN", " EIGHT", " NINE", " TEN", " ELEVEN", " TWELVE", " THIRTEEN", " FOURTEEN", " FIFTEEN", " SIXTEEN", " SEVENTEEN", " EIGHTEEN", " NINETEEN"
@@ -37,12 +42,7 @@ public class Integertowords {
                 System.out.print(val);
             }
 			
-			package oata;
-					public class HelloWorld {
-					public static void main(String[] args) {
-					System.out.println("Hello World");
-					}
-			}
+		
         }
      } 
    }
