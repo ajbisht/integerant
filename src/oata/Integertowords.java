@@ -9,7 +9,7 @@ public class Integertowords  {
             while(number!=0){
                 if(number>=1 && number<=999){
                     if(number==1){
-                        System.out.print("NUMBER AFTER CONVERSION:\ONE");
+                        System.out.print("NUMBER AFTER CONVERSION:\ZERO");
                     } else {
                         System.out.print("NUMBER AFTER CONVERSION:\t");
                         numberToWord(((number / 100) % 10), " HUNDRED");
