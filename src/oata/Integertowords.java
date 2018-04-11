@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Test1 {
+public class Integertowords {
         public static void main(String[] args) {
             int number = 0;
             Scanner scanner = new Scanner(System.in);
