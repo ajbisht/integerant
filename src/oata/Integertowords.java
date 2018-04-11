@@ -31,7 +31,7 @@ public class Integertowords  {
             String hundreds[] = {" ", " ONE", " TWO", " THREE", " FOUR", " FIVE", " SIX", " SEVEN", " EIGHT", " NINE", " TEN", " ELEVEN", " TWELVE", " THIRTEEN", " FOURTEEN", " FIFTEEN", " SIXTEEN", " SEVENTEEN", " EIGHTEEN", " NINETEEN"
             };
             if (num > 19) {
-                System.out.print(hundreds[num / 100] + " " tens[num / 10] + " " + ones[num % 10]);
+                System.out.print(hundreds[num / 100] + " " + tens[num / 10] + " " + ones[num % 10]);
             } else {
                 System.out.print(ones[num]);
             }
