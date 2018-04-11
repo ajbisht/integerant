@@ -6,13 +6,13 @@ public class Integertowords  {
             Scanner scanner = new Scanner(System.in);
             System.out.print("Please type a number between 1 and 2 billion OR type 0 to exit:  ");
             number = scanner.nextInt();
-            while(number!=-1){
+            while(number!=0){
                 if(number>=1 && number<=2000000000){
-                    if(number==0){
+                    if(number==1){
                         System.out.print("NUMBER AFTER CONVERSION:\tZERO");
                     } else {
                         System.out.print("NUMBER AFTER CONVERSION:\t");
-                        numberToWord(((number / 100) % 10), " Billion");
+                        numberToWord(((number / 100000000) % 10), " Billion");
                         numberToWord((number % 100), " ");
                     }
 
