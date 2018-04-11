@@ -28,7 +28,7 @@
     </target>
 
 	
-	<target name="run-java">
+	<target name="run">
    <java jar="${jar.dir}/${ant.project.name}.jar">
       <arg value="-1"/>
         </java>
