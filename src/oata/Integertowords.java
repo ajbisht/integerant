@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Integertowords {
+public class Integertowords  {
         public static void main(String[] args) {
             int number = 0;
             Scanner scanner = new Scanner(System.in);
@@ -21,13 +21,8 @@ public class Integertowords {
                 }
                 System.out.print("\nPlease type a number between 0 and 999 OR type -1 to exit:  ");
                 number = scanner.nextInt();
-            
-			package oata;
-					public class HelloWorld {
-					public static void main(String[] args) {
-					System.out.println("Hello World");
-					}
-			}        
+            }
+        }
 
         public static void numberToWord(int num, String val) {
             String ones[] = {" ", " ONE", " TWO", " THREE", " FOUR", " FIVE", " SIX", " SEVEN", " EIGHT", " NINE", " TEN", " ELEVEN", " TWELVE", " THIRTEEN", " FOURTEEN", " FIFTEEN", " SIXTEEN", " SEVENTEEN", " EIGHTEEN", " NINETEEN"
@@ -41,8 +36,5 @@ public class Integertowords {
             if (num > 0) {
                 System.out.print(val);
             }
-			
-		
         }
-     } 
-   }
+    }
