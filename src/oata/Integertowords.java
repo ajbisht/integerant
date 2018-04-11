@@ -2,24 +2,24 @@ import java.util.Scanner;
 
 public class Integertowords  {
         public static void main(String[] args) {
-            int number = 1;
+            int number = 0;
             Scanner scanner = new Scanner(System.in);
-            System.out.print("Please type a number between 1 and 2 billion OR type 0 to exit:  ");
+            System.out.print("Please type a number between 0 and 999 OR type -1 to exit:  ");
             number = scanner.nextInt();
-            while(number!=0){
-                if(number>=1 && number<=2000000000){
-                    if(number==1){
+            while(number!=-1){
+                if(number>=0 && number<=999){
+                    if(number==0){
                         System.out.print("NUMBER AFTER CONVERSION:\tZERO");
                     } else {
                         System.out.print("NUMBER AFTER CONVERSION:\t");
-                        numberToWord(((number / 100000000) % 10), " Billion");
+                        numberToWord(((number / 100) % 10), " HUNDRED");
                         numberToWord((number % 100), " ");
                     }
 
                 } else{
                     System.out.print("NUMBER OUT OF RANGE");
                 }
-                System.out.print("\nPlease type a number between 1 and 2 billion OR type 0 to exit:  ");
+                System.out.print("\nPlease type a number between 0 and 999 OR type -1 to exit:  ");
                 number = scanner.nextInt();
             }
         }
@@ -28,10 +28,8 @@ public class Integertowords  {
             String ones[] = {" ", " ONE", " TWO", " THREE", " FOUR", " FIVE", " SIX", " SEVEN", " EIGHT", " NINE", " TEN", " ELEVEN", " TWELVE", " THIRTEEN", " FOURTEEN", " FIFTEEN", " SIXTEEN", " SEVENTEEN", " EIGHTEEN", " NINETEEN"
             };
             String tens[] = {" ", " ", " TWENTY", " THIRTY", " FOURTY", " FIFTY", " SIXTY", " SEVENTY", " EIGHTY", " NINETY"};
-            String hundreds[] = {" ", " ONE", " TWO", " THREE", " FOUR", " FIVE", " SIX", " SEVEN", " EIGHT", " NINE", " TEN", " ELEVEN", " TWELVE", " THIRTEEN", " FOURTEEN", " FIFTEEN", " SIXTEEN", " SEVENTEEN", " EIGHTEEN", " NINETEEN"
-            };
             if (num > 19) {
-                System.out.print(hundreds[num / 100] + " " + tens[num / 10] + " " + ones[num % 10]);
+                System.out.print(tens[num / 10] + " " + ones[num % 10]);
             } else {
                 System.out.print(ones[num]);
             }
