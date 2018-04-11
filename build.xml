@@ -6,6 +6,7 @@
     <property name="jar.dir"     value="${build.dir}/jar"/>
     <property name="main-class"  value="Integertowords"/>
 
+
     <target name="clean">
         <delete dir="${build.dir}"/>
     </target>
@@ -23,8 +24,9 @@
             </manifest>
         </jar>
     </target>
-  
 
     <target name="clean-build" depends="clean,jar"/>
+
+    <target name="main" depends="clean"/>
 
 </project>
