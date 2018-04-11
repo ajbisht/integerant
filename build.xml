@@ -27,10 +27,6 @@
         </jar>
     </target>
 
-  ######  <target name="run" depends="jar">
-   ####     <java jar="${jar.dir}/${ant.project.name}.jar" fork="true"/>
-####		 <arg value="-1"/>
-	#####	    </target>
 	
 	<target name="run-java">
    <java jar="${jar.dir}/${ant.project.name}.jar">
